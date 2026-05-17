@@ -57,5 +57,6 @@ COPY --from=builder /usr/local/bin/tunnel-node /usr/local/bin/tunnel-node
 
 USER tunnel
 ENV PORT=8080
+ENV TUNNEL_AUTH_KEY=ArmanIkoper93746269@UDY3722EIFifu
 EXPOSE 8080
 ENTRYPOINT ["tunnel-node"]
